@@ -8,10 +8,10 @@ module.exports = function(server, path, callback) {
     }
 
     server.listen(path, function(err) {
-        if (!err && mask) {
+        if (mask) {
             process.umask(mask);
             mask = null;
         }
-        callback.call(null, arguments);
+        callback.apply(null, arguments);
     });
 };
