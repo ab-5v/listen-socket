@@ -1,6 +1,6 @@
 {
   "name": "listen-socket",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Start a UNIX socket server listening for connections on the given path.",
   "main": "index.js",
   "scripts": {
